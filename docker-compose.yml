@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  redirect-www:
+  redirectomatic:
     image: docker-registry.lskysd.ca/web-external/redirectomatic:latest
     ports:
       - 80

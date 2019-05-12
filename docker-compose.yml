@@ -8,3 +8,4 @@ services:
       - lssd_redirectomatic
 networks:
   lssd_redirectomatic:
+    name: lssd_redirectomatic

@@ -9,8 +9,8 @@ pipeline {
         stage('Git clone') {
             steps {
                 git branch: 'master',
-                    credentialsId: 'DEPLOY-KEY-JENKINS',
-                    url: 'ssh://git@sourcecode.lskysd.ca:32123/Infrastructure/Redirectomatic.git'
+                    credentialsId: 'GITHUB-DK-REDIRECT',
+                    url: 'git@github.com:LivingSkySchoolDivision/RedirectOMatic.git'
             }
         }
         stage('Docker build') {
